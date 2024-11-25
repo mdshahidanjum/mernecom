@@ -34,7 +34,7 @@ function App() {
     
     if(authUser){
       
-      const socket = io('http://localhost:8000',{
+      const socket = io('https://mernchat-zbxa.onrender.com',{
         auth:{
           userId:authUser._id
         }
