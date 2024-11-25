@@ -17,7 +17,7 @@ const port = process.env.PORT;
 app.use(express.json())
 app.use(cookieParser())
 const corOpation={
-    origin:'http://localhost:3000',
+    origin:'https://chat-client-yy8m.onrender.com',
     credentials:true
 }
 app.use(cors(corOpation))
