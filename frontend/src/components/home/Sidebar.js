@@ -27,7 +27,7 @@ const Sidebar = () => {
   const logoutHandler =async()=>{
     try{
       // axios.defaults.withCredentials=true    //not required because auth middleware not passes
-    const res = await axios.get(`${process.env.REACT_APP_SERVER_URI}/api/v1/user/logout`)
+    const res = await axios.get(`https://mernchat-zbxa.onrender.com/api/v1/user/logout`)
      console.log(res)
      navigate('/login')
      toast.success(res.data.message)
