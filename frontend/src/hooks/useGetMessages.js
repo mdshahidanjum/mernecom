@@ -13,7 +13,7 @@ const useGetMessages = () => {
         const fetchMessages=async()=>{
             try{
                axios.defaults.withCredentials=true;
-               const res = await axios.get(`${process.env.REACT_APP_SERVER_URI}/api/v1/message/${selectedUser?._id}`)
+               const res = await axios.get(`https://mernchat-zbxa.onrender.com/api/v1/message/${selectedUser?._id}`)
                dispatch(setMessage(res.data))
             //    console.log("massages da", res)
             }catch(err){
