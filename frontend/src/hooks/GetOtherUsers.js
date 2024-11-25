@@ -12,7 +12,7 @@ const GetOtherUsers = () => {
         const fetchOtherUsers = async()=>{
             try{
                 axios.defaults.withCredentials=true
-                const res = await axios.get(`https://mernchat-zbxa.onrender.com/api/v1/user`);
+                const res = await axios.get("https://mernchat-zbxa.onrender.com/api/v1/user");
                   // console.log(res)
                   dispatch(setOtherUsers(res.data))
                  
